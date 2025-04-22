@@ -82,17 +82,17 @@ void drawUI(const std::string& region, const std::string& itemId, const std::str
     }
 
     ImGui::Begin("STALCRAFT Auction Monitor");
-    if (ImGui::Button("Обновить")) {
+    if (ImGui::Button("Update")) {
         fetchLots(region, itemId, apiKey);
     }
     ImGui::SameLine();
-    ImGui::Checkbox("Автообновление", &autoRefresh);
+    ImGui::Checkbox("AutoResearch", &autoRefresh);
 
-    ImGui::Text("Лотов загружено: %zu", lots.size());
-    if (ImGui::BeginTable("Лоты", 4, ImGuiTableFlags_Borders | ImGuiTableFlags_RowBg)) {
-        ImGui::TableSetupColumn("Цена");
-        ImGui::TableSetupColumn("Кол-во");
-        ImGui::TableSetupColumn("Цена/шт");
+    ImGui::Text("Lots loaded: %zu", lots.size());
+    if (ImGui::BeginTable("Lots", 4, ImGuiTableFlags_Borders | ImGuiTableFlags_RowBg)) {
+        ImGui::TableSetupColumn("Price");
+        ImGui::TableSetupColumn("Amout");
+        ImGui::TableSetupColumn("Price/thing");
         ImGui::TableSetupColumn("StartTime");
         ImGui::TableHeadersRow();
 
