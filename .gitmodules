@@ -1,0 +1,18 @@
+[submodule "libs/imgui"]
+	path = libs/imgui
+	url = https://github.com/ocornut/imgui.git
+[submodule "libs/implot"]
+	path = libs/implot
+	url = https://github.com/epezent/implot.git
+[submodule "build/libs/json"]
+	path = build/libs/json
+	url = https://github.com/nlohmann/json.git
+[submodule "build/libs/cpr"]
+	path = build/libs/cpr
+	url = https://github.com/libcpr/cpr.git
+[submodule "libs/cpr"]
+	path = libs/cpr
+	url = https://github.com/libcpr/cpr.git
+[submodule "libs/json"]
+	path = libs/json
+	url = https://github.com/nlohmann/json.git
